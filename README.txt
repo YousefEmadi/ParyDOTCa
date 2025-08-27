@@ -1,8 +1,12 @@
+Author: yoseph.emd@gmail.com
+Inital version: 2025-08-26
+----------------------------------
 Registrar: CanSpace
 Nameserver: Cloudflare
-owner: yoseph.emd@gmail.com
-----------------------------------
 
+Forest Greens Color Palette
+
+----------------------------------
 Hyperspace by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
