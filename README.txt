@@ -3,8 +3,8 @@ Inital version: 2025-08-26
 ----------------------------------
 Registrar: CanSpace
 Nameserver: Cloudflare
-
 Forest Greens Color Palette
+Form handler: Formspree
 
 ----------------------------------
 Hyperspace by HTML5 UP
