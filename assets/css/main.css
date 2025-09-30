@@ -3911,3 +3911,73 @@ input, select, textarea {
 .justify-text {
   text-align: justify;
 }
+
+/* Logo Center Styles - Responsive */
+.logo-center {
+  width: 120px;
+  height: auto;
+  display: block;
+  margin: 0 auto 2em auto;
+  transition: width 0.3s ease;
+  text-decoration: none;
+}
+
+/* Sidebar specific logo positioning */
+#sidebar .logo-center {
+  margin-bottom: 2em;
+  margin-top: 0;
+}
+
+/* Responsive breakpoints for logo */
+@media screen and (max-width: 1680px) {
+  .logo-center {
+    width: 110px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .logo-center {
+    width: 100px;
+  }
+  
+  /* When sidebar becomes horizontal navbar */
+  #sidebar .logo-center {
+    width: 30px;
+    margin: 0.1em 0.25em 0.1em 0.25em;
+  }
+  
+  #sidebar > a {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 3.5em;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .logo-center {
+    width: 90px;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .logo-center {
+    width: 80px;
+  }
+  
+  /* Hide sidebar completely on mobile */
+  #sidebar .logo-center {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo-center {
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .logo-center {
+    width: 60px;
+  }
+}
