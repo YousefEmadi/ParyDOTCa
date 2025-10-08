@@ -197,10 +197,10 @@ input, select, textarea {
 		}
 
 			h1.major:after {
-				background-image: -moz-linear-gradient(to right, #228B22, #ccad00);
-				background-image: -webkit-linear-gradient(to right, #228B22, #ccad00);
-				background-image: -ms-linear-gradient(to right, #228B22, #ccad00);
-				background-image: linear-gradient(to right, #228B22, #ccad00);
+				background-image: -moz-linear-gradient(to right, #228B22, #ae9402);
+				background-image: -webkit-linear-gradient(to right, #228B22, #ae9402);
+				background-image: -ms-linear-gradient(to right, #228B22, #ae9402);
+				background-image: linear-gradient(to right, #228B22, #ae9402);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -2444,7 +2444,7 @@ input, select, textarea {
 		input[type="radio"]:checked + label:before {
 			background: #ffffff;
 			border-color: #ffffff;
-			color: #ccad00;
+			color: #ae9402;
 			content: '\f00c';
 		}
 
@@ -2552,11 +2552,11 @@ input, select, textarea {
 				}
 
 				.wrapper.style3 .icon.major:before {
-					color: #ccad00;
+					color: #ae9402;
 				}
 
 				.wrapper.style3-alt .icon.major:before {
-					color: #ccad00;
+					color: #ae9402;
 				}
 
 /* Image */
@@ -3256,11 +3256,11 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #ccad00;
+			background-color: #ae9402;
 		}
 
 		.wrapper.style3-alt {
-			background-color: #ccad00;
+			background-color: #ae9402;
 		}
 
 		.wrapper.fullscreen {
@@ -3765,10 +3765,10 @@ input, select, textarea {
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #228B22, #ccad00);
-				background-image: -webkit-linear-gradient(to right, #228B22, #ccad00);
-				background-image: -ms-linear-gradient(to right, #228B22, #ccad00);
-				background-image: linear-gradient(to right, #228B22, #ccad00);
+				background-image: -moz-linear-gradient(to right, #228B22, #ae9402);
+				background-image: -webkit-linear-gradient(to right, #228B22, #ae9402);
+				background-image: -ms-linear-gradient(to right, #228B22, #ae9402);
+				background-image: linear-gradient(to right, #228B22, #ae9402);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -3857,7 +3857,7 @@ input, select, textarea {
 
 						#sidebar nav a:after {
 							background-image: none;
-							background-color: #ccad00;
+							background-color: #ae9402;
 						}
 
 		}
@@ -3953,7 +3953,7 @@ input, select, textarea {
 }
 
 .team-member:hover .profile-image {
-	border-color: #ccad00;
+	border-color: #ae9402;
 	transform: scale(1.05);
 }
 
@@ -3965,7 +3965,7 @@ input, select, textarea {
 }
 
 .team-member .team-name {
-	color: #ccad00;
+	color: #ae9402;
 	font-size: 1.5em;
 	font-weight: bold;
 	margin: 0 0 0.5em 0;
