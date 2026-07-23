@@ -3896,6 +3896,7 @@ input, select, textarea {
 		#intro .intro-media {
 			flex: 1 1 340px;
 			max-width: 460px;
+			width: 100%;
 		}
 
 		#intro .intro-carousel {
@@ -3906,19 +3907,25 @@ input, select, textarea {
 			box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
 			background: rgba(255, 255, 255, 0.06);
 			aspect-ratio: 4 / 5;
+			min-height: 320px;
 		}
 
 		#intro .carousel-slide {
 			position: absolute;
 			inset: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			opacity: 0;
 			visibility: hidden;
+			pointer-events: none;
 			transition: opacity 0.6s ease, visibility 0.6s ease;
 		}
 
 		#intro .carousel-slide.is-active {
 			opacity: 1;
 			visibility: visible;
+			pointer-events: auto;
 		}
 
 		#intro .carousel-slide img,
@@ -3927,6 +3934,7 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
+			background-color: #0f2b11;
 		}
 
 		#intro .carousel-dots {

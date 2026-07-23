@@ -86,8 +86,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const slides = Array.from(carousel.querySelectorAll('.carousel-slide'));
         const dots = Array.from(document.querySelectorAll('.carousel-dot'));
 
-        if (slides.length > 1) {
+        if (slides.length > 1 && dots.length === slides.length) {
             let activeIndex = 0;
+            let intervalId = null;
 
             function showSlide(index) {
                 activeIndex = (index + slides.length) % slides.length;
@@ -99,11 +100,21 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
             }
 
+            function startAutoplay() {
+                if (intervalId) {
+                    clearInterval(intervalId);
+                }
+                intervalId = setInterval(() => showSlide(activeIndex + 1), 5000);
+            }
+
             showSlide(0);
-            setInterval(() => showSlide(activeIndex + 1), 5000);
+            startAutoplay();
 
             dots.forEach((dot, index) => {
-                dot.addEventListener('click', () => showSlide(index));
+                dot.addEventListener('click', () => {
+                    showSlide(index);
+                    startAutoplay();
+                });
             });
         }
     }
