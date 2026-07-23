@@ -3880,6 +3880,78 @@ input, select, textarea {
 		background-size: 100% 100%;
 	}
 
+		#intro .intro-layout {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 2.5em;
+			flex-wrap: wrap;
+		}
+
+		#intro .intro-copy {
+			flex: 1 1 320px;
+			max-width: 560px;
+		}
+
+		#intro .intro-media {
+			flex: 1 1 340px;
+			max-width: 460px;
+		}
+
+		#intro .intro-carousel {
+			position: relative;
+			overflow: hidden;
+			border-radius: 1rem;
+			border: solid 1px rgba(255, 255, 255, 0.18);
+			box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+			background: rgba(255, 255, 255, 0.06);
+			aspect-ratio: 4 / 5;
+		}
+
+		#intro .carousel-slide {
+			position: absolute;
+			inset: 0;
+			opacity: 0;
+			visibility: hidden;
+			transition: opacity 0.6s ease, visibility 0.6s ease;
+		}
+
+		#intro .carousel-slide.is-active {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		#intro .carousel-slide img,
+		#intro .carousel-slide video {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		#intro .carousel-dots {
+			display: flex;
+			justify-content: center;
+			gap: 0.5rem;
+			margin-top: 1rem;
+		}
+
+		#intro .carousel-dot {
+			width: 0.8rem;
+			height: 0.8rem;
+			border: 0;
+			border-radius: 50%;
+			background: rgba(255, 255, 255, 0.45);
+			padding: 0;
+			cursor: pointer;
+			transition: transform 0.2s ease, background 0.2s ease;
+		}
+
+		#intro .carousel-dot.is-active {
+			background: #ffffff;
+			transform: scale(1.15);
+		}
+
 		#intro p {
 			font-size: 1.25em;
 		}
@@ -3888,6 +3960,20 @@ input, select, textarea {
 
 				#intro p br {
 					display: none;
+				}
+
+			}
+
+			@media screen and (max-width: 980px) {
+
+				#intro .intro-layout {
+					flex-direction: column;
+					align-items: flex-start;
+				}
+
+				#intro .intro-media {
+					max-width: 100%;
+					width: 100%;
 				}
 
 			}

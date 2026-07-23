@@ -80,4 +80,31 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         console.error('Form not found!');
     }
+
+    const carousel = document.querySelector('.intro-carousel');
+    if (carousel) {
+        const slides = Array.from(carousel.querySelectorAll('.carousel-slide'));
+        const dots = Array.from(document.querySelectorAll('.carousel-dot'));
+
+        if (slides.length > 1) {
+            let activeIndex = 0;
+
+            function showSlide(index) {
+                activeIndex = (index + slides.length) % slides.length;
+                slides.forEach((slide, slideIndex) => {
+                    slide.classList.toggle('is-active', slideIndex === activeIndex);
+                });
+                dots.forEach((dot, dotIndex) => {
+                    dot.classList.toggle('is-active', dotIndex === activeIndex);
+                });
+            }
+
+            showSlide(0);
+            setInterval(() => showSlide(activeIndex + 1), 5000);
+
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => showSlide(index));
+            });
+        }
+    }
 });
