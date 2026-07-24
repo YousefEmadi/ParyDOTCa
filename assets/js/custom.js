@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (intervalId) {
                     clearInterval(intervalId);
                 }
-                intervalId = setInterval(() => showSlide(activeIndex + 1), 5000);
+                intervalId = setInterval(() => showSlide(activeIndex + 1), 7000);
             }
 
             showSlide(0);
